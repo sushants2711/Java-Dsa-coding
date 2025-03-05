@@ -1,5 +1,9 @@
 public class primeNumber {
     public static boolean isPrimeOrNot(int num) {
+        if(num == 0 || num == 1) {
+            return false;
+        }
+
         int count = 0;
         for (int i = 2; i <= num / 2; i++) {
             if (num % i == 0) {
